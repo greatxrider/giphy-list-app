@@ -205,13 +205,27 @@ button {
 }
 
 /* Footer.css */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
+}
+
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 1em 0;
-  position: relative;
   width: 100%;
+  position: relative;
   bottom: 0;
 }
 
