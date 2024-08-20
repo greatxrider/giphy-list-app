@@ -2,6 +2,7 @@ import React, { useState, useEffect, act } from "react";
 import axios from 'axios';
 import SearchForm from './Components/SearchForm';
 import GifList from "./Components/GifList";
+import Footer from "./Components/Footer";
 
 function App() {
   const [gifs, setGifs] = useState([]);
@@ -48,6 +49,7 @@ function App() {
             : <GifList data={gifs} />
         }
       </div>
+      <Footer />
     </div>
   );
 };
